@@ -1,60 +1,53 @@
 # 💳 Credit Card Fraud Detection System
 
-🚀 An end-to-end Machine Learning project that detects fraudulent credit card transactions using advanced classification techniques, real-time API, explainable AI, and an interactive dashboard.
+🚀 A complete end-to-end Machine Learning project that detects fraudulent credit card transactions using advanced models, real-time dashboard, and explainable AI.
 
 ---
 
 ## 📌 Overview
 
-Fraudulent transactions are a major problem in banking and fintech industries, leading to huge financial losses.
+Fraud detection is critical in banking and fintech to prevent financial loss and protect customers.
 
 This project builds a **real-time fraud detection system** that:
 
-* Identifies fraudulent transactions
-* Handles highly imbalanced data
+* Detects fraudulent transactions
+* Handles imbalanced data using SMOTE
+* Uses XGBoost for high performance
 * Provides explainability using SHAP
-* Deploys predictions via API
-* Visualizes results in a dashboard
+* Displays results in a premium dashboard
 
 ---
 
 ## 🎯 Objective
 
-* Detect fraud transactions with high recall
-* Handle imbalanced dataset effectively
-* Build an industry-level ML pipeline
-* Deploy model using FastAPI
-* Create interactive dashboard using Streamlit
+* Detect fraud with high recall
+* Build industry-level ML pipeline
+* Visualize results using dashboard
+* Provide explainable predictions
 
 ---
 
 ## 🧠 Tech Stack
 
-**Languages & Libraries**
-
 * Python
 * Pandas, NumPy
 * Scikit-learn
 * XGBoost
-* SMOTE (Imbalanced Data Handling)
-* SHAP (Explainable AI)
-
-**Deployment & UI**
-
-* FastAPI (Real-time API)
-* Streamlit (Dashboard)
-* Plotly (Visualization)
+* SMOTE
+* SHAP
+* Streamlit
+* Plotly
 
 ---
 
 ## ⚙️ Features
 
 * ✅ Fraud detection using XGBoost
-* ✅ Handles imbalanced data using SMOTE
-* ✅ Real-time API prediction
-* ✅ Interactive dashboard
-* ✅ SHAP explainability (feature importance)
-* ✅ Transaction simulation (Kafka-style)
+* ✅ Imbalanced data handling (SMOTE)
+* ✅ SHAP explainability
+* ✅ Premium dark dashboard UI
+* ✅ KPI metrics + Gauge chart
+* ✅ Real-time prediction
 
 ---
 
@@ -66,46 +59,37 @@ Credit-Card-Fraud-Detection/
 │── models/
 │   └── fraud_model.pkl
 │── outputs/
-│   ├── confusion_matrix.png
-│   ├── shap_summary.png
-│── src/
-│   ├── api.py
-│   ├── simulate.py
+│── images/
 │── app/
 │   └── dashboard.py
-│── images/
 │── main.py
 │── requirements.txt
 │── README.md
 ```
 
 ---
+## 📥 Dataset
+
+Dataset used: Credit Card Fraud Detection Dataset
+
+Download from:
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 ## ▶️ How to Run
 
-### 1️⃣ Install Dependencies
+### 1️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Train Model
+### 2️⃣ Train model
 
 ```bash
 python main.py
 ```
 
-### 3️⃣ Run FastAPI Server
-
-```bash
-uvicorn src.api:app --reload
-```
-
-👉 Open: http://127.0.0.1:8000/docs
-
----
-
-### 4️⃣ Run Streamlit Dashboard
+### 3️⃣ Run dashboard
 
 ```bash
 streamlit run app/dashboard.py
@@ -113,55 +97,52 @@ streamlit run app/dashboard.py
 
 ---
 
-### 5️⃣ Run Simulation
-
-```bash
-python src/simulate.py
-```
-
----
-
 ## 📊 Results
 
-* Improved fraud detection using XGBoost
-* Handled class imbalance with SMOTE
-* Achieved strong recall (important for fraud detection)
-* Generated explainable insights using SHAP
+* Accurate fraud detection
+* High recall for fraud class
+* Clear model explainability
+* Interactive visualization
 
 ---
 
 ## 📸 Screenshots
 
-### 📊 Confusion Matrix
-
-![Confusion Matrix](outputs/confusion_matrix.png)
-
-### 🧠 SHAP Feature Importance
-
-![SHAP](outputs/shap_summary.png)
-
-### 📊 Dashboard UI
+### 🖥️ Dashboard UI
 
 ![Dashboard](images/dashboard.png)
 
-### ⚡ API Swagger
+---
 
-![API](images/api.png)
+### 🔍 Prediction Result
 
-### 🔄 Simulation Output
+![Prediction](images/prediction.png)
+![Prediction](images/prediction1.png)
 
-![Simulation](images/simulation.png)
+---
+
+
+
+### 📊 Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+---
+
+### 🧠 SHAP Feature Importance
+
+![SHAP](images/shap_summary.png)
 
 ---
 
 ## 💼 Industry Relevance
 
-This project simulates real-world fraud detection systems used in:
+Used in:
 
 * Banking systems
 * Payment gateways
 * Fintech platforms
-* E-commerce transactions
+* E-commerce fraud detection
 
 ---
 
@@ -169,19 +150,17 @@ This project simulates real-world fraud detection systems used in:
 
 * Handling imbalanced datasets
 * Building ML pipelines
-* Model evaluation (precision, recall)
-* Explainable AI using SHAP
-* API development with FastAPI
-* Dashboard creation with Streamlit
+* Model evaluation
+* Explainable AI
+* Dashboard development
 
 ---
 
 ## 🚀 Future Improvements
 
 * Real-time Kafka streaming
-* Deep Learning models
-* Email/SMS fraud alerts
-* Deployment on cloud (AWS/GCP)
+* Email/SMS alerts
+* Cloud deployment (AWS/GCP)
 
 ---
 
@@ -193,4 +172,4 @@ This project simulates real-world fraud detection systems used in:
 
 ## ⭐ If you like this project
 
-Give it a ⭐ on GitHub and connect with me!
+Give it a ⭐ on GitHub!
